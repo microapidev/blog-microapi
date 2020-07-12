@@ -1,3 +1,4 @@
+import django_heroku
 """
 Django settings for blog_microservice project.
 
@@ -155,3 +156,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
+
+# if 'DATABASE_URL' in os.environ:
+#     import dj_database_url
+#     DATABASES = {'default': dj_database_url.config()}
+
+django_heroku.settings(locals())
