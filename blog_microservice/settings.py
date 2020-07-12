@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_swagger',
+    'drf_yasg',
     'allauth',
     'allauth.account',
     'rest_auth',
@@ -149,10 +150,7 @@ STATIC_URL = '/static/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-SWAGGER_SETTINGS = {
-    'LOGIN_URL': 'rest_framework:login',
-    'LOGOUT_URL': 'rest_framework:logout',
-}
+
 SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
