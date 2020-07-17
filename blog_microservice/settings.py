@@ -157,6 +157,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 SITE_ID = 1
 
+SWAGGER_SETTINGS = {
+    'LOGIN_URL': 'rest_framework:login',
+    'LOGOUT_URL': 'rest_framework:logout'
+}
+
 LOGIN_REDIRECT_URL = '/'
 
 # if 'DATABASE_URL' in os.environ:
